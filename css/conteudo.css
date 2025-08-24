@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --fundo-tela-principal: #F9FAFB;
+    --header-fundo: #FFFFFF;
+    --titulos-h1-a-h6: #111827;
+    --texto-padrao: #374151;
+    --links-e-botoes: #2563EB;
+    --destaques-e-botoes-secundarios: #10B981;
+    --bordas-e-divisoes-de-tela: #E5E7EB;
+    --estilo-titulos-padrao: 'Poppins', sans-serif;
+    --estilo-texto-padrao: 'Roboto', sans-serif;
+} 
+
+[data-theme="dark"] {
+    --fundo-tela-principal: #0D1117;
+    --header-fundo: #1F2937;
+    --titulos-h1-a-h6: #F9FAFB;
+    --texto-padrao: #D1D5DB;
+    --links-e-botoes: #3B82F6;
+    --destaques-e-botoes-secundarios: #10B981;
+    --bordas-e-divisoes-de-tela: #374151;
+    --estilo-titulos-padrao: 'Poppins', sans-serif;
+    --estilo-texto-padrao: 'Roboto', sans-serif;
+}
+
+.conteudo-principal {
+    background-color: var(--fundo-tela-principal);
+}
+
+.inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio img {
+    margin-top: 100px;
+    width: 276px;
+    height: auto;
+}
+
+.destaque-cor {
+    color: var(--links-e-botoes);
+}
+
+.textos h1 {
+    font-family: var(--estilo-titulos-padrao);
+    font-size: 40px;
+    color: var(--titulos-h1-a-h6);
+    text-align: center;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.textos h2 {
+    font-family: var(--estilo-titulos-padrao);
+    font-size: 25px;
+    color: var(--titulos-h1-a-h6);
+    text-align: center;
+    margin-top: 15px;
+}
+
+.textos p {
+    font-family: var(--estilo-texto-padrao);
+    font-size: 20px;
+    color: var(--texto-padrao);
+    line-height: 150%;
+    text-align: center;
+    margin-top: 48px;
+    letter-spacing: 1.3px;
+    width: 1024px;
+}
+
+.continuacao {
+    height: 100vh;
+    background-color: var(--fundo-tela-principal);
+}

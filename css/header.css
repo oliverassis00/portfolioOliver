@@ -1,0 +1,95 @@
+/* Variáveis de Cores e Padrões */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --fundo-tela-principal: #F9FAFB;
+    --header-fundo: #FFFFFF;
+    --titulos-h1-a-h6: #111827;
+    --texto-padrao: #374151;
+    --links-e-botoes: #2563EB;
+    --destaques-e-botoes-secundarios: #10B981;
+    --bordas-e-divisoes-de-tela: #E5E7EB;
+    --estilo-titulos-padrao: 'Poppins', sans-serif;
+    --estilo-texto-padrao: 'Roboto', sans-serif;
+} 
+
+[data-theme="dark"] {
+    --fundo-tela-principal: #0D1117;
+    --header-fundo: #1F2937;
+    --titulos-h1-a-h6: #F9FAFB;
+    --texto-padrao: #D1D5DB;
+    --links-e-botoes: #3B82F6;
+    --destaques-e-botoes-secundarios: #10B981;
+    --bordas-e-divisoes-de-tela: #374151;
+    --estilo-titulos-padrao: 'Poppins', sans-serif;
+    --estilo-texto-padrao: 'Roboto', sans-serif;
+}
+
+/* Estlização do Header */
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--header-fundo);
+    font-family: var(--estilo-titulos-padrao); 
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--titulos-h1-a-h6);
+    height: 100px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu span {
+    display: flex;
+    align-items: center;
+    margin-left: 91px;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.menu ul li {
+    display: flex;
+    align-items: center;
+    margin: 0px 20px;
+    padding: 10px;
+}
+
+.temas {
+    display: flex;
+    align-items: center;
+    margin-right: 91px;
+}
+
+.temas img {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+}
+
+.switch-mode {
+    display: flex;
+    align-items: center;
+    background-color: var(--fundo-tela-principal);
+    position: relative;
+    border: 2px solid var(--titulos-h1-a-h6);
+    height: 30px;
+    margin: 0px 10px;
+    border-radius: 50px;
+    width: 70px;
+    cursor: pointer;
+}
+
+.bolinha {
+    margin-left: 5px;
+    position: absolute;
+    background-color: var(--titulos-h1-a-h6);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
